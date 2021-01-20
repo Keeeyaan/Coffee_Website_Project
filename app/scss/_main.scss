@@ -1,0 +1,126 @@
+.l-main {
+  .home {
+    &__container {
+      row-gap: 0.5rem;
+    }
+    &__title {
+      font-size: $biggest-font-size;
+      color: $title-color;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    &__description {
+      margin-bottom: 1.5rem;
+    }
+    &__img {
+      width: 280px;
+      justify-self: center;
+    }
+  }
+
+  .menu {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    &__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(48, 48, 48, 0.7);
+      border-radius: 0.5rem;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.322);
+      padding: 0.75rem;
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.493);
+      }
+    }
+    &__img {
+      width: 100px;
+      align-self: center;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+    }
+    &__name,
+    &__price {
+      font-weight: 600;
+      color: $title-color;
+    }
+    &__name {
+      font-size: $normal-font-size;
+    }
+    &__detail,
+    &__prici {
+      font-size: $small-font-size;
+    }
+    &__detail {
+      margin-bottom: 0.5rem;
+    }
+    &__button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      font-size: 1.25rem;
+      padding: 0.625rem 0.813rem;
+      border-radius: 0.5rem 0 0.5rem 0;
+    }
+    .section-title {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .about {
+    &__container {
+      margin-bottom: 1rem;
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: $first-color;
+      font-weight: 600;
+    }
+    .section-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    &__data {
+      text-align: center;
+    }
+    &__description {
+      margin-bottom: 1.5rem;
+    }
+    &__img {
+      width: 300px;
+      border-radius: 0.5rem;
+      justify-self: center;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.295);
+    }
+  }
+
+  .contact {
+    .section-subtitle {
+      color: $first-color;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    &__data {
+      text-align: center;
+    }
+    &__description {
+      margin-bottom: 1.5rem;
+    }
+    &__button {
+      text-align: center;
+    }
+  }
+}

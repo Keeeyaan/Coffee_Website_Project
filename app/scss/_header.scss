@@ -1,0 +1,83 @@
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $body-color;
+  .nav {
+    @media screen and (max-width: 767px) {
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    &__menu {
+      @media screen and (max-width: 767px) {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2.5rem 0 0;
+        background-color: rgba(27, 27, 27, .85);
+        transition: 0.5s;
+        box-shadow: 0 0 4px rgba(255, 255, 255, 0.336);
+        border-radius: 2rem;
+        text-align: center;
+        z-index: 100;
+      }
+    }
+    &__item {
+      margin-bottom: 1.5rem;
+    }
+    &__link,
+    &__logo,
+    &__toggle {
+      color: $title-color;
+      font-weight: 600;
+    }
+    &__logo,
+    &__link {
+      transition: 0.3s;
+      &:hover {
+        color: $first-color;
+      }
+    }
+    &__toggle {
+      cursor: pointer;
+      > span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $title-color;
+        transform-origin: 3px 1px;
+        transition: all 0.3s ease-in-out;
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+
+      &.open {
+        > span:first-child {
+          transform: rotate(45deg);
+        }
+
+        > span:nth-child(2) {
+          opacity: 0;
+        }
+
+        > span:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &__logo {
+        color: $first-color;
+        font-size: $h2-font-size;
+        font-weight: 700;
+      }
+  }
+}

@@ -1,0 +1,26 @@
+/*========== COLORS ==========*/
+$first-color: #458E7D;
+$first-color-alt: #3d776a;
+$first-color-send: #b68555;
+$title-color: #fcfcfc;
+$text-color: #fcfcfc;
+$text-color-light: #8f8a8a;
+$body-color: #000000;
+$container-color: #fff;
+
+/*========== Font and typography ==========*/
+$body-font: "Poppins", sans-serif;
+
+$biggest-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+
+@media screen and (min-width: 968px) {
+  $biggest-font-size: 3rem;
+  $h2-font-size: 1.75rem;
+  $h3-font-size: 1.25rem;
+  $normal-font-size: 1rem;
+  $small-font-size: 0.875rem;
+}
